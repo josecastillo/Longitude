@@ -22,6 +22,12 @@
 		E73B9BFB17BFFD9700537102 /* LTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73B9BFA17BFFD9700537102 /* LTDetailViewController.m */; };
 		E73B9BFE17BFFD9700537102 /* LTMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E73B9BFC17BFFD9700537102 /* LTMasterViewController.xib */; };
 		E73B9C0117BFFD9700537102 /* LTDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E73B9BFF17BFFD9700537102 /* LTDetailViewController.xib */; };
+		E73B9C0817BFFFAE00537102 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73B9C0717BFFFAE00537102 /* CoreLocation.framework */; };
+		E73B9C0D17C0018C00537102 /* _LTEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E73B9C0A17C0018B00537102 /* _LTEvent.m */; };
+		E73B9C0E17C0018C00537102 /* LTEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E73B9C0C17C0018C00537102 /* LTEvent.m */; };
+		E73B9C1017C0040C00537102 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73B9C0F17C0040C00537102 /* MapKit.framework */; };
+		E73B9C1217C008DE00537102 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B9C1117C008DD00537102 /* Icon.png */; };
+		E73B9C1417C008E000537102 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B9C1317C008DF00537102 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,14 @@
 		E73B9BFA17BFFD9700537102 /* LTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTDetailViewController.m; sourceTree = "<group>"; };
 		E73B9BFD17BFFD9700537102 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LTMasterViewController.xib; sourceTree = "<group>"; };
 		E73B9C0017BFFD9700537102 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LTDetailViewController.xib; sourceTree = "<group>"; };
+		E73B9C0717BFFFAE00537102 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E73B9C0917C0018B00537102 /* _LTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _LTEvent.h; sourceTree = "<group>"; };
+		E73B9C0A17C0018B00537102 /* _LTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _LTEvent.m; sourceTree = "<group>"; };
+		E73B9C0B17C0018C00537102 /* LTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTEvent.h; sourceTree = "<group>"; };
+		E73B9C0C17C0018C00537102 /* LTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTEvent.m; sourceTree = "<group>"; };
+		E73B9C0F17C0040C00537102 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E73B9C1117C008DD00537102 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		E73B9C1317C008DF00537102 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73B9C1017C0040C00537102 /* MapKit.framework in Frameworks */,
+				E73B9C0817BFFFAE00537102 /* CoreLocation.framework in Frameworks */,
 				E73B9BDA17BFFD9600537102 /* UIKit.framework in Frameworks */,
 				E73B9BDC17BFFD9600537102 /* Foundation.framework in Frameworks */,
 				E73B9BDE17BFFD9600537102 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +99,8 @@
 		E73B9BD817BFFD9600537102 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E73B9C0F17C0040C00537102 /* MapKit.framework */,
+				E73B9C0717BFFFAE00537102 /* CoreLocation.framework */,
 				E73B9BD917BFFD9600537102 /* UIKit.framework */,
 				E73B9BDB17BFFD9600537102 /* Foundation.framework */,
 				E73B9BDD17BFFD9600537102 /* CoreGraphics.framework */,
@@ -96,13 +114,8 @@
 			children = (
 				E73B9BEA17BFFD9700537102 /* LTAppDelegate.h */,
 				E73B9BEB17BFFD9700537102 /* LTAppDelegate.m */,
-				E73B9BF617BFFD9700537102 /* LTMasterViewController.h */,
-				E73B9BF717BFFD9700537102 /* LTMasterViewController.m */,
-				E73B9BF917BFFD9700537102 /* LTDetailViewController.h */,
-				E73B9BFA17BFFD9700537102 /* LTDetailViewController.m */,
-				E73B9BFC17BFFD9700537102 /* LTMasterViewController.xib */,
-				E73B9BFF17BFFD9700537102 /* LTDetailViewController.xib */,
-				E73B9BF317BFFD9700537102 /* Longitude.xcdatamodeld */,
+				E73B9C1517C031F200537102 /* View Controllers */,
+				E73B9C1617C0320C00537102 /* Data Model */,
 				E73B9BE217BFFD9700537102 /* Supporting Files */,
 			);
 			path = Longitude;
@@ -115,11 +128,38 @@
 				E73B9BE417BFFD9700537102 /* InfoPlist.strings */,
 				E73B9BE717BFFD9700537102 /* main.m */,
 				E73B9BE917BFFD9700537102 /* Longitude-Prefix.pch */,
+				E73B9C1317C008DF00537102 /* Icon@2x.png */,
+				E73B9C1117C008DD00537102 /* Icon.png */,
 				E73B9BED17BFFD9700537102 /* Default.png */,
 				E73B9BEF17BFFD9700537102 /* Default@2x.png */,
 				E73B9BF117BFFD9700537102 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E73B9C1517C031F200537102 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E73B9BF617BFFD9700537102 /* LTMasterViewController.h */,
+				E73B9BF717BFFD9700537102 /* LTMasterViewController.m */,
+				E73B9BFC17BFFD9700537102 /* LTMasterViewController.xib */,
+				E73B9BF917BFFD9700537102 /* LTDetailViewController.h */,
+				E73B9BFA17BFFD9700537102 /* LTDetailViewController.m */,
+				E73B9BFF17BFFD9700537102 /* LTDetailViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E73B9C1617C0320C00537102 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				E73B9C0B17C0018C00537102 /* LTEvent.h */,
+				E73B9C0C17C0018C00537102 /* LTEvent.m */,
+				E73B9C0917C0018B00537102 /* _LTEvent.h */,
+				E73B9C0A17C0018B00537102 /* _LTEvent.m */,
+				E73B9BF317BFFD9700537102 /* Longitude.xcdatamodeld */,
+			);
+			name = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +220,8 @@
 				E73B9BF217BFFD9700537102 /* Default-568h@2x.png in Resources */,
 				E73B9BFE17BFFD9700537102 /* LTMasterViewController.xib in Resources */,
 				E73B9C0117BFFD9700537102 /* LTDetailViewController.xib in Resources */,
+				E73B9C1217C008DE00537102 /* Icon.png in Resources */,
+				E73B9C1417C008E000537102 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +237,8 @@
 				E73B9BF517BFFD9700537102 /* Longitude.xcdatamodeld in Sources */,
 				E73B9BF817BFFD9700537102 /* LTMasterViewController.m in Sources */,
 				E73B9BFB17BFFD9700537102 /* LTDetailViewController.m in Sources */,
+				E73B9C0D17C0018C00537102 /* _LTEvent.m in Sources */,
+				E73B9C0E17C0018C00537102 /* LTEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

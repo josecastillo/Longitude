@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "LTEvent.h"
 
-@interface LTDetailViewController : UIViewController
+@interface LTDetailViewController : UIViewController <MKMapViewDelegate>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) LTEvent *detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
 @end

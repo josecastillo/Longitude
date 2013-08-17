@@ -12,7 +12,9 @@
 
 #import <CoreData/CoreData.h>
 
-@interface LTMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface LTMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate> {
+    UIDocumentInteractionController *documentInteractionController;
+}
 
 @property (strong, nonatomic) LTDetailViewController *detailViewController;
 

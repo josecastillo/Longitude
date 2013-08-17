@@ -9,6 +9,7 @@
 #import "LTAppDelegate.h"
 
 #import "LTMasterViewController.h"
+#import "LTEvent.h"
 
 @implementation LTAppDelegate
 
@@ -26,6 +27,12 @@
     masterViewController.managedObjectContext = self.managedObjectContext;
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.delegate = self;
+    _locationManager.distanceFilter = 100;
+    [_locationManager startUpdatingLocation];
+    
     return YES;
 }
 
@@ -53,8 +60,13 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+    
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.alertBody = @"Longitude was terminated. Do you wish to relaunch?";
+    notification.alertAction = @"Relaunch";
+    notification.hasAction = YES;
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
 
 - (void)saveContext
@@ -150,6 +162,52 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    for (CLLocation *location in locations) {
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+        LTEvent *event = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:self.managedObjectContext];
+        
+        event.timestamp = location.timestamp;
+        event.latitudeValue = location.coordinate.latitude;
+        event.longitudeValue = location.coordinate.longitude;
+        event.accuracyValue = location.horizontalAccuracy;
+    }
+    
+    // Save the context.
+    NSError *error = nil;
+    if (![self.managedObjectContext save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex != actionSheet.cancelButtonIndex) {
+        switch (buttonIndex) {
+            case 0:
+                _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+                break;
+            case 1:
+                _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+                break;
+            case 2:
+                _locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+                break;
+            case 3:
+                _locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
+                break;
+            case 4:
+                _locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
+                break;
+                
+            default:
+                break;
+        }
+    }
 }
 
 @end
