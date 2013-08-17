@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E73B9BDA17BFFD9600537102 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73B9BD917BFFD9600537102 /* UIKit.framework */; };
+		E73B9BDC17BFFD9600537102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73B9BDB17BFFD9600537102 /* Foundation.framework */; };
+		E73B9BDE17BFFD9600537102 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73B9BDD17BFFD9600537102 /* CoreGraphics.framework */; };
+		E73B9BE017BFFD9600537102 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73B9BDF17BFFD9600537102 /* CoreData.framework */; };
+		E73B9BE617BFFD9700537102 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E73B9BE417BFFD9700537102 /* InfoPlist.strings */; };
+		E73B9BE817BFFD9700537102 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E73B9BE717BFFD9700537102 /* main.m */; };
+		E73B9BEC17BFFD9700537102 /* LTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E73B9BEB17BFFD9700537102 /* LTAppDelegate.m */; };
+		E73B9BEE17BFFD9700537102 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B9BED17BFFD9700537102 /* Default.png */; };
+		E73B9BF017BFFD9700537102 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B9BEF17BFFD9700537102 /* Default@2x.png */; };
+		E73B9BF217BFFD9700537102 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E73B9BF117BFFD9700537102 /* Default-568h@2x.png */; };
+		E73B9BF517BFFD9700537102 /* Longitude.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E73B9BF317BFFD9700537102 /* Longitude.xcdatamodeld */; };
+		E73B9BF817BFFD9700537102 /* LTMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73B9BF717BFFD9700537102 /* LTMasterViewController.m */; };
+		E73B9BFB17BFFD9700537102 /* LTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73B9BFA17BFFD9700537102 /* LTDetailViewController.m */; };
+		E73B9BFE17BFFD9700537102 /* LTMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E73B9BFC17BFFD9700537102 /* LTMasterViewController.xib */; };
+		E73B9C0117BFFD9700537102 /* LTDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E73B9BFF17BFFD9700537102 /* LTDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E73B9BD617BFFD9600537102 /* Longitude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Longitude.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73B9BD917BFFD9600537102 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E73B9BDB17BFFD9600537102 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E73B9BDD17BFFD9600537102 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E73B9BDF17BFFD9600537102 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E73B9BE317BFFD9700537102 /* Longitude-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Longitude-Info.plist"; sourceTree = "<group>"; };
+		E73B9BE517BFFD9700537102 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E73B9BE717BFFD9700537102 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E73B9BE917BFFD9700537102 /* Longitude-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Longitude-Prefix.pch"; sourceTree = "<group>"; };
+		E73B9BEA17BFFD9700537102 /* LTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTAppDelegate.h; sourceTree = "<group>"; };
+		E73B9BEB17BFFD9700537102 /* LTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTAppDelegate.m; sourceTree = "<group>"; };
+		E73B9BED17BFFD9700537102 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E73B9BEF17BFFD9700537102 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E73B9BF117BFFD9700537102 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E73B9BF417BFFD9700537102 /* Longitude.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Longitude.xcdatamodel; sourceTree = "<group>"; };
+		E73B9BF617BFFD9700537102 /* LTMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTMasterViewController.h; sourceTree = "<group>"; };
+		E73B9BF717BFFD9700537102 /* LTMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTMasterViewController.m; sourceTree = "<group>"; };
+		E73B9BF917BFFD9700537102 /* LTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTDetailViewController.h; sourceTree = "<group>"; };
+		E73B9BFA17BFFD9700537102 /* LTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTDetailViewController.m; sourceTree = "<group>"; };
+		E73B9BFD17BFFD9700537102 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LTMasterViewController.xib; sourceTree = "<group>"; };
+		E73B9C0017BFFD9700537102 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LTDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E73B9BD317BFFD9600537102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E73B9BDA17BFFD9600537102 /* UIKit.framework in Frameworks */,
+				E73B9BDC17BFFD9600537102 /* Foundation.framework in Frameworks */,
+				E73B9BDE17BFFD9600537102 /* CoreGraphics.framework in Frameworks */,
+				E73B9BE017BFFD9600537102 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E73B9BCD17BFFD9600537102 = {
+			isa = PBXGroup;
+			children = (
+				E73B9BE117BFFD9700537102 /* Longitude */,
+				E73B9BD817BFFD9600537102 /* Frameworks */,
+				E73B9BD717BFFD9600537102 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E73B9BD717BFFD9600537102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E73B9BD617BFFD9600537102 /* Longitude.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E73B9BD817BFFD9600537102 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E73B9BD917BFFD9600537102 /* UIKit.framework */,
+				E73B9BDB17BFFD9600537102 /* Foundation.framework */,
+				E73B9BDD17BFFD9600537102 /* CoreGraphics.framework */,
+				E73B9BDF17BFFD9600537102 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E73B9BE117BFFD9700537102 /* Longitude */ = {
+			isa = PBXGroup;
+			children = (
+				E73B9BEA17BFFD9700537102 /* LTAppDelegate.h */,
+				E73B9BEB17BFFD9700537102 /* LTAppDelegate.m */,
+				E73B9BF617BFFD9700537102 /* LTMasterViewController.h */,
+				E73B9BF717BFFD9700537102 /* LTMasterViewController.m */,
+				E73B9BF917BFFD9700537102 /* LTDetailViewController.h */,
+				E73B9BFA17BFFD9700537102 /* LTDetailViewController.m */,
+				E73B9BFC17BFFD9700537102 /* LTMasterViewController.xib */,
+				E73B9BFF17BFFD9700537102 /* LTDetailViewController.xib */,
+				E73B9BF317BFFD9700537102 /* Longitude.xcdatamodeld */,
+				E73B9BE217BFFD9700537102 /* Supporting Files */,
+			);
+			path = Longitude;
+			sourceTree = "<group>";
+		};
+		E73B9BE217BFFD9700537102 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E73B9BE317BFFD9700537102 /* Longitude-Info.plist */,
+				E73B9BE417BFFD9700537102 /* InfoPlist.strings */,
+				E73B9BE717BFFD9700537102 /* main.m */,
+				E73B9BE917BFFD9700537102 /* Longitude-Prefix.pch */,
+				E73B9BED17BFFD9700537102 /* Default.png */,
+				E73B9BEF17BFFD9700537102 /* Default@2x.png */,
+				E73B9BF117BFFD9700537102 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E73B9BD517BFFD9600537102 /* Longitude */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E73B9C0417BFFD9700537102 /* Build configuration list for PBXNativeTarget "Longitude" */;
+			buildPhases = (
+				E73B9BD217BFFD9600537102 /* Sources */,
+				E73B9BD317BFFD9600537102 /* Frameworks */,
+				E73B9BD417BFFD9600537102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Longitude;
+			productName = Longitude;
+			productReference = E73B9BD617BFFD9600537102 /* Longitude.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E73B9BCE17BFFD9600537102 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Panchromatic, LLC";
+			};
+			buildConfigurationList = E73B9BD117BFFD9600537102 /* Build configuration list for PBXProject "Longitude" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E73B9BCD17BFFD9600537102;
+			productRefGroup = E73B9BD717BFFD9600537102 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E73B9BD517BFFD9600537102 /* Longitude */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E73B9BD417BFFD9600537102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E73B9BE617BFFD9700537102 /* InfoPlist.strings in Resources */,
+				E73B9BEE17BFFD9700537102 /* Default.png in Resources */,
+				E73B9BF017BFFD9700537102 /* Default@2x.png in Resources */,
+				E73B9BF217BFFD9700537102 /* Default-568h@2x.png in Resources */,
+				E73B9BFE17BFFD9700537102 /* LTMasterViewController.xib in Resources */,
+				E73B9C0117BFFD9700537102 /* LTDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E73B9BD217BFFD9600537102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E73B9BE817BFFD9700537102 /* main.m in Sources */,
+				E73B9BEC17BFFD9700537102 /* LTAppDelegate.m in Sources */,
+				E73B9BF517BFFD9700537102 /* Longitude.xcdatamodeld in Sources */,
+				E73B9BF817BFFD9700537102 /* LTMasterViewController.m in Sources */,
+				E73B9BFB17BFFD9700537102 /* LTDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E73B9BE417BFFD9700537102 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E73B9BE517BFFD9700537102 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E73B9BFC17BFFD9700537102 /* LTMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E73B9BFD17BFFD9700537102 /* en */,
+			);
+			name = LTMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		E73B9BFF17BFFD9700537102 /* LTDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E73B9C0017BFFD9700537102 /* en */,
+			);
+			name = LTDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E73B9C0217BFFD9700537102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E73B9C0317BFFD9700537102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E73B9C0517BFFD9700537102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Longitude/Longitude-Prefix.pch";
+				INFOPLIST_FILE = "Longitude/Longitude-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E73B9C0617BFFD9700537102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Longitude/Longitude-Prefix.pch";
+				INFOPLIST_FILE = "Longitude/Longitude-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E73B9BD117BFFD9600537102 /* Build configuration list for PBXProject "Longitude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E73B9C0217BFFD9700537102 /* Debug */,
+				E73B9C0317BFFD9700537102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E73B9C0417BFFD9700537102 /* Build configuration list for PBXNativeTarget "Longitude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E73B9C0517BFFD9700537102 /* Debug */,
+				E73B9C0617BFFD9700537102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E73B9BF317BFFD9700537102 /* Longitude.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E73B9BF417BFFD9700537102 /* Longitude.xcdatamodel */,
+			);
+			currentVersion = E73B9BF417BFFD9700537102 /* Longitude.xcdatamodel */;
+			path = Longitude.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E73B9BCE17BFFD9600537102 /* Project object */;
+}
