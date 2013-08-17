@@ -200,11 +200,11 @@
         id <NSFetchedResultsSectionInfo> section = [[self.fetchedResultsController sections] lastObject];
         NSMutableArray *outputData = [NSMutableArray arrayWithCapacity:[section.objects count]];
         for (LTEvent *event in section.objects) {
-            int timestamp = [event.timestamp timeIntervalSinceReferenceDate] * 1000;
+            long long timestamp = [event.timestamp timeIntervalSince1970] * 1000;
             // Don't ask me why but this is Google's format for Latitude data export.
             // Timestamp is a string, accuracy is an integer and and lat/lon are integers multiplied by 1x10^7
             [outputData addObject:@{
-             @"timestampMs": [NSString stringWithFormat:@"%d", timestamp],
+             @"timestampMs": [NSString stringWithFormat:@"%lld", timestamp],
              @"latitudeE7": @((int)(event.latitudeValue * 1e7)),
              @"longitudeE7": @((int)(event.longitudeValue * 1e7)),
              @"accuracy": @((int)round(event.accuracyValue)),
