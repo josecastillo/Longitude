@@ -32,6 +32,7 @@
     _locationManager.delegate = self;
     _locationManager.distanceFilter = 100;
     [_locationManager startUpdatingLocation];
+    [_locationManager startMonitoringSignificantLocationChanges];
     
     return YES;
 }
